@@ -1,0 +1,85 @@
+package test2;
+
+import java.awt.Color;
+import java.awt.GridLayout;
+
+import javax.swing.BorderFactory;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.border.Border;
+
+public class Test12_5 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		JFrame frame=new JFrame("Exercise12_5");
+		frame.setLayout(new GridLayout(1, 4));
+		frame.setSize(300, 200);
+		Border bd = BorderFactory.createLineBorder(Color.GREEN,2);
+		JLabel labe1 = new JLabel("a");
+		labe1.setBorder(bd);
+		JLabel labe2 = new JLabel("b");
+        labe2.setBorder(bd);
+        JLabel labe3 = new JLabel("c");
+        labe3.setBorder(bd);
+        JLabel labe4 = new JLabel("d");
+        labe4.setBorder(bd);
+        frame.add(labe1,1,0);
+        frame.add(labe2);
+        frame.add(labe3);
+        frame.add(labe4);
+        frame.setLocationRelativeTo(null);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+		
+	}
+
+}
+
+
+
+
+
+
+
+//public class G12_5 {
+//
+//    public static void main(String[] args){
+//
+//        JFrame jf = new JFrame();
+//
+//        jf.setLayout(new GridLayout(4,1));
+//
+//        jf.setSize(300,200);
+//
+//        Border bd = BorderFactory.createLineBorder(Color.BLACK,1);
+//
+//        JLabel jb1 = new JLabel("Li");
+//
+//        jb1.setBorder(bd);
+//
+//        JLabel jb2 = new JLabel("Yi");
+//
+//        jb2.setBorder(bd);
+//
+//        JLabel jb3 = new JLabel("Fei");
+//
+//        jb3.setBorder(bd);
+//
+//        JLabel jb4 = new JLabel("Sha");
+//
+//        jb4.setBorder(bd);
+//
+//        jf.add(jb1);
+//
+//        jf.add(jb2);
+//
+//        jf.add(jb3);
+//
+//        jf.add(jb4);
+//
+//        jf.setVisible(true);
+//
+//    }
+//
+//}

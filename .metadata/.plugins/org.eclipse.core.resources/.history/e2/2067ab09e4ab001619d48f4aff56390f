@@ -1,0 +1,18 @@
+package 事件驱动编程和动画;
+
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+
+public class Test16_4 {
+
+	public static void main(String[] args) {
+		JFrame frame=new JFrame("Exercise12_4");
+		frame.setLayout(new GridLayout(2, 1));
+		
+		// TODO 自动生成的方法存根
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package test1;
+
+import java.util.Scanner;
+import java.util.*;
+public class NumberException {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		boolean continueinput=true;
+		do{
+			try 
+			{
+				System.out.println("Please input two numbers:");
+				int number1=Integer.parseInt(input.next());
+				int number2=Integer.parseInt(input.next());
+				System.out.println("The number input is "+number1+" "+number2);
+				System.out.println("number1+number2=: "+(number1+number2));
+				continueinput=false;
+			} 
+			catch (NumberFormatException ex) 
+			{
+//				System.out.println("Please input a number try again:");
+				System.out.println("Try again.("+"Incorrect input : an integer is required)");
+				input.nextLine();
+			}
+		}while(continueinput);
+	}
+}

@@ -1,0 +1,59 @@
+package 事件驱动编程和动画;
+
+//import java.awt.*;
+//import java.awt.event.*;
+//import javax.swing.*;
+//
+//class Mouse implements MouseMotionListener
+//{
+//	int x=0;
+//	int y=0;
+//	public Mouse() {
+//		this.addMouseMotionListener(this);
+//		// TODO 自动生成的构造函数存根
+//	}
+//}
+//
+//public class Test16_8 {
+//
+//	public static void main(String[] args) 
+//	{
+//		JFrame frame=new JFrame("Exercise16_4");
+//		frame.setLayout(new FlowLayout());
+//		frame.setSize(600, 300);
+//		frame.setLocationRelativeTo(null);
+//		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		frame.setVisible(true);
+//		// TODO 自动生成的方法存根
+//
+//	}
+//
+//}
+
+
+
+
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class Test16_8 extends JFrame 
+{
+	public static void main(String[] args)
+	{
+		new Test16_8().setVisible(true);
+	}
+	
+	public Test16_8()
+	{
+		setSize(300,300);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		addMouseListener(new MouseAdapter()
+		{
+			public void mouseClicked(MouseEvent e)
+			{
+				setTitle(e.getX()+","+e.getY());
+			}
+		});
+	}
+}

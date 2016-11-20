@@ -1,0 +1,39 @@
+package 事件驱动编程和动画;
+
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.Label;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Test16_4 {
+
+	public static void main(String[] args) {
+		JFrame frame=new JFrame("Exercise12_4");
+		frame.setLayout(new FlowLayout());
+		JPanel pane1 = new JPanel(new FlowLayout());
+		pane1.add(new Label("Number"));
+		pane1.add(new JTextField(8));
+		pane1.add(new Label("Number"));
+		pane1.add(new JTextField(8));
+		pane1.add(new Label("Result"));
+		pane1.add(new JTextField(8));
+		frame.setSize(800, 300);
+		JPanel pane = new JPanel(new FlowLayout());
+        pane.add(new JButton("Button1"));
+        pane.add(new JButton("Button2"));
+        pane.add(new JButton("Button3"));
+        frame.add(pane1);
+        System.out.println();
+        frame.add(pane);
+        frame.setLocationRelativeTo(null);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		// TODO 自动生成的方法存根
+
+	}
+
+}

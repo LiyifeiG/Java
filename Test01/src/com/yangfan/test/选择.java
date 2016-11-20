@@ -1,0 +1,5 @@
+package com.yangfan.test;
+
+public class Ñ¡Ôñ {
+
+}
